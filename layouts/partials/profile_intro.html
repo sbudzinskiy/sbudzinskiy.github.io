@@ -1,0 +1,15 @@
+<div class="entry-content">
+    {{ $sorted_jobs := sort site.Data.jobs "start" "desc" }}
+    {{ $job := index $sorted_jobs 0 }}
+
+    <p class="profile-intro-header">
+        I am a {{ $job.position }} at the {{ $job.organization }}, specializing in {{ .interests }}.
+    </p>
+
+    {{ .research_statement | markdownify }}
+    
+    <div class="profile-email">
+        <span class="email-label">Email:</span> 
+        <span class="email-address"> {{ .email_head }} <span class="obfuscate">[at]</span> {{ .email_tail }} </span>
+    </div>
+</div>

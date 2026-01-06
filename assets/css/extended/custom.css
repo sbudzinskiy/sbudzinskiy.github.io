@@ -1,0 +1,312 @@
+/* SPLIT LAYOUT GRID */
+.profile-split-layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* LEFT COLUMN */
+.profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 180px; 
+    min-width: 180px; 
+}
+
+/* SOCIAL ICONS CONTAINER */
+.profile-socials .social-icons {
+    display: flex !important;       /* Force flexbox layout */
+    flex-direction: row !important; /* Force horizontal alignment */
+    justify-content: center;        /* Center them */
+    flex-wrap: nowrap;              /* Prevent wrapping */
+    gap: 8px;                       /* Tighter gap to fit 5 icons */
+    width: 100%;
+}
+
+/*  RESET LINK PADDING */
+.profile-socials .social-icons a {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+/* ICON SIZING */
+.profile-socials .social-icons svg {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.2s;
+}
+
+.profile-socials .social-icons a:hover svg {
+    transform: scale(1.15);
+}
+
+/* ROUND IMAGE HACK */
+.profile-left img {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 10%;
+    width: 180px;
+    height: 180px;
+    border: 3px solid var(--tertiary);
+    padding: 2px;
+}
+
+/* RIGHT COLUMN */
+.profile-right {
+    text-align: left;
+}
+
+.profile-intro-header {
+    margin-bottom: 0.5rem;
+}
+
+/* MOBILE RESPONSIVENESS (Stack them on phones) */
+@media screen and (max-width: 768px) {
+    .profile-split-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .profile-right {
+        text-align: center;
+    }
+}
+
+/* -------------------------------------- */
+/* COMPACT CV LAYOUT                     */
+/* -------------------------------------- */
+
+.timeline-container {
+    margin-top: 0.0rem;
+}
+
+.timeline-item {
+    /* Reduced space between different jobs */
+    margin-bottom: 1.0rem; 
+    
+    /* Reduced side indentation */
+    padding-left: 1rem; 
+}
+
+.timeline-title {
+    position: relative;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.0; /* Slightly tighter line height */
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0;
+}
+
+.timeline-period {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-family: monospace;
+    white-space: nowrap;
+}
+
+.timeline-subheader {
+    font-size: 0.95rem;
+    color: var(--content);
+    /* Reduced gap between Org and Description */
+    margin-bottom: 0;
+    margin-top: 0; 
+    line-height: 1.4;
+}
+
+.timeline-org {
+    font-weight: 500;
+}
+
+.timeline-loc {
+    color: var(--secondary);
+    font-size: 0.85rem;
+    margin-left: 8px;
+}
+
+.timeline-desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* -------------------------------------- */
+/* LOGO STYLING                          */
+/* -------------------------------------- */
+
+.logo a {
+    /* 1. Remove the bold aggression */
+    font-weight: 400;  /* 400 = Regular, 700 = Bold */
+    
+    /* 2. (Optional) Adjust size to match menu closer */
+    /* PaperMod default is usually 24px. Menu is often ~16px-18px. */
+    font-size: 1.1rem; 
+}
+
+/* -------------------------------------- */
+/* MOBILE LAYOUT FIXES                   */
+/* -------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. Stack the split layout vertically */
+    .profile-split-layout {
+        flex-direction: column; /* Stack Top-to-Bottom */
+        text-align: center;     /* Force all text to center */
+    }
+
+    /* 2. Center the Image Container */
+    .profile-left {
+        width: 100%;            /* Take full width */
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    /* Cross-axis alignment: Center elements */
+        margin-right: 0;        /* Reset any desktop margins */
+        margin-bottom: 0.0rem;  /* Add space between Image and Bio */
+    }
+
+    /* 3. Ensure the Image itself is centered */
+    .profile-left img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* 4. Center the Bio Text Container */
+    .profile-right {
+        width: 100%;
+        text-align: center;     /* Ensure text inside paragraphs is centered */
+        margin-top: 0;
+    }
+
+    /* 5. (Optional) Center the Social Icons if they aren't already */
+    .social-icons {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+}
+
+/* -------------------------------------- */
+/* UTILITY CLASS: THE MARKER DOT         */
+/* -------------------------------------- */
+
+/* Add this class to ANY element to give it a dot on the left */
+.has-marker {
+    position: relative; /* This is the anchor */
+}
+
+.has-marker::before {
+    content: "";
+    position: absolute;
+    
+    /* Position relative to the element */
+    left: -1rem; 
+    top: 0.5rem;   /* Centers relative to font size */
+    
+    /* The Dot Design */
+    width: 5px;
+    height: 5px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.profile-email {
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    font-size: 0.95rem;
+    color: var(--secondary);
+}
+
+.email-label {
+    font-weight: 600; /* Bold label "Email:" */
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+.email-address {
+    font-family: monospace;
+    letter-spacing: 0.5px;
+}
+
+/* Optional: Make the [at] slightly lighter so the real text stands out */
+.obfuscate {
+    color: var(--primary);   /* Or make it lighter/darker to distinguish */
+    opacity: 0.7;
+}
+
+/* -------------------------------------- */
+/* RESEARCH VISITS (Minimalist Tabular)   */
+/* -------------------------------------- */
+
+.visits-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /* REMOVED: border-left, padding-left */
+}
+
+.visit-row {
+    display: flex;
+    gap: 20px; /* Consistent gap between Date and Venue */
+    margin-bottom: 0.8rem; /* Slightly more breathing room than 0.5rem */
+    align-items: baseline; /* Ensures Date and Venue text align perfectly */
+}
+
+.visit-date {
+    flex-shrink: 0;
+    width: 90px; /* Slightly wider to fit "Sep 2024" comfortably */
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    /* OPTIONAL: Align right to create a sharp edge against the text */
+    text-align: left; 
+}
+
+.visit-details {
+    font-size: 0.95rem;
+    color: var(--content);
+    line-height: 1.4;
+}
+
+.visit-host {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    margin-left: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .visit-row {
+        /* Stack Date on top of Details */
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 0;
+        margin-bottom: 1.0rem; /* More space between items when stacked */
+    }
+
+    .visit-date {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.0rem; /* Small gap between Date and Venue */
+        
+        /* Optional: Make date slightly distinct on mobile */
+        font-weight: 600; 
+        color: var(--primary); 
+    }
+
+    .visit-details {
+        /* Ensure text wraps nicely */
+        width: 100%;
+    }
+}

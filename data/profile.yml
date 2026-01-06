@@ -1,0 +1,20 @@
+name: "Stanislav Budzinskiy"
+image: "/portrait.jpg"
+
+email_head: "stanislav.budzinskiy"
+email_tail: "univie.ac.at"
+
+interests: "Numerical Analysis and Multilinear Algebra"
+research_statement: >
+  I study the theoretical foundations of **Tensor Decompositions** and the numerical stability of **Deep Learning**. 
+  In both areas, I pursue a single practical goal: reliable and efficient computation.
+  
+socials:
+  - name: scholar
+    url: "https://scholar.google.com/citations?user=m_2U0wkAAAAJ"
+  - name: github
+    url: "https://github.com/sbudzinskiy"
+  - name: orcid
+    url: "https://orcid.org/0000-0001-7983-7900"
+  - name: researchgate
+    url: "https://www.researchgate.net/profile/Stanislav-Budzinskiy"

@@ -1,0 +1,10 @@
+<div class="visit-row">
+    <div class="visit-date">
+        {{ time.Format "Jan 2006" .date }}
+    </div>
+        
+    <div class="visit-details">
+        <strong>{{ .venue }}</strong>
+        <span class="visit-host">(Host: {{ .host }})</span>
+    </div>
+</div>

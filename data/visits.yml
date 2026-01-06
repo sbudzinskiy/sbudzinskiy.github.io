@@ -1,0 +1,14 @@
+- venue: "University of Geneva"
+  location: "Geneva, Switzerland"
+  date: "2025-11-01"
+  host: "Bart Vandereycken"
+
+- venue: "University of Chicago"
+  location: "Chicago, USA"
+  date: "2024-12-01"
+  host: "Yuehaw Khoo"
+
+- venue: "École Polytechnique Fédérale de Lausanne"
+  location: "Lausanne, Switzerland"
+  date: "2024-11-01"
+  host: "Daniel Kressner"

@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<article class="post-single">
+  <div class="post-content">
+      {{ .Content }}
+
+      {{ if site.Data.jobs }}
+      <h3 id="employment">Employment</h3>
+      <div class="timeline-container">
+          {{ range sort site.Data.jobs "start" "desc" }}
+              {{ partial "job.html" . }}
+          {{ end }}
+      </div>
+      <hr>
+      {{ end }}
+
+      {{ if site.Data.education }}
+      <h3 id="employment">Education</h3>
+      <div class="timeline-container">
+          {{ range sort site.Data.education "start" "desc" }}
+              {{ partial "job.html" . }}
+          {{ end }}
+      </div>
+      <hr>
+      {{ end }}
+      
+      {{ if site.Data.visits }}
+      <h3 id="visits">Research Visits</h3>
+      <div class="visits-container">
+        {{ range sort site.Data.visits "date" "desc" }}
+            {{ partial "visit.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}    
+  </div>
+</article>
+
+{{ end }}

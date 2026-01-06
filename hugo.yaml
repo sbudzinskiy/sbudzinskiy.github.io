@@ -1,0 +1,22 @@
+baseURL: "https://sbudzinskiy.github.io/"
+title: "Stanislav Budzinskiy"
+theme: "PaperMod"
+
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+
+    - identifier: "bio"
+      name: "Bio"
+      url: "/bio/"
+      weight: 2
+
+params:
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
