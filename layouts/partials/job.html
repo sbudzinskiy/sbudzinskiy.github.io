@@ -1,12 +1,12 @@
 <div class="timeline-item">
+
+    <div class="timeline-marker-date">
+        {{ time.Format "2006" .start }}&ndash;{{ if .end }}{{ time.Format "2006" .end }}{{ else }}Now{{ end }}
+    </div>
+
     <div class="timeline-content">
         <div class="timeline-header">
-            <div class="timeline-title has-marker">
-                {{ .position }}
-            </div>
-            <span class="timeline-period">
-                {{ time.Format "2006" .start }}-{{ if .end }}{{ if eq .end "Present" }}Present{{ else }}{{ time.Format "2006" .end }}{{ end }}{{ else }}Present{{ end }}
-            </span>
+            <div class="timeline-title">{{ .position }}</div>
         </div>
         
         <div class="timeline-subheader">

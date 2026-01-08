@@ -1,13 +1,13 @@
 - position: "Senior Postdoc"
-  department: "Faculty of Mathematics"
+  department: "Fac. of Mathematics"
   organization: "University of Vienna"
   start: "2025-01-01"
-  end: "Present"
+  end: 
   location: "Vienna, Austria"
   description: "Group of Philipp Petersen on ‘Mathematics of machine learning'."
 
 - position: "Postdoc"
-  department: "Faculty of Mathematics"
+  department: "Fac. of Mathematics"
   organization: "University of Vienna"
   start: "2023-01-01"
   end: "2025-01-01"
@@ -23,7 +23,7 @@
   description: "Group of Eugene Tyrtyshnikov on ‘Tensor methods and applications’."
 
 - position: "Junior Researcher"
-  department: "Faculty of Computational Mathematics and Cybernetics"
+  department: "Fac. of Computational Mathematics and Cybernetics"
   organization: "Lomonosov Moscow State University"
   start: "2018-01-01"
   end: "2021-01-01"
