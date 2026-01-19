@@ -1,0 +1,21 @@
+{{/* Usage: {{ partial "utils/smart-yyyy.html" .date }} 
+    Accepts: "YYYY", "YYYY-MM", or "YYYY-MM-DD"
+    Returns: "2006" format (e.g. "2024")
+*/}}
+
+{{- if . -}}
+    {{- $dateStr := string . -}}
+
+    {{/* Fix YYYY-MM (7 chars) -> Add -01 */}}
+    {{- if eq (len $dateStr) 7 -}}
+        {{- $dateStr = printf "%s-01" $dateStr -}}
+    {{- end -}}
+
+    {{/* Fix YYYY (4 chars) -> Add -01-01 */}}
+    {{- if eq (len $dateStr) 4 -}}
+        {{- $dateStr = printf "%s-01-01" $dateStr -}}
+    {{- end -}}
+
+    {{/* Output the formatted date */}}
+    {{- time.Format "2006" $dateStr -}}
+{{- end -}}

@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<article class="post-single">
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+</article>
+
+{{ $pubs := site.Data.publications.main }}
+{{ if $pubs }}
+<section class="home-section">
+    <h3>Selected Publications</h3>
+    <div class="publications-container">
+        {{ range sort (where $pubs "selected" true) "year" "desc" }}
+            {{ partial "publication.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

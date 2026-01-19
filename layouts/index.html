@@ -1,14 +1,10 @@
 {{ define "main" }}
 
 {{ $profile := site.Data.profile }}
-{{ $events := site.Data.events }}
-{{ $pubs := site.Data.publications }}
-
-<article class="first-entry home-info profile-split-layout">
-    
+<section class="home-info profile-split-layout"> 
     <div class="profile-left">
         {{ with $profile.image }}
-        <img src="{{ . }}" alt="{{ $profile.name }}">
+            <img src="{{ . }}" alt="{{ $profile.name }}">
         {{ end }}
         
         <div class="profile-socials">
@@ -21,21 +17,30 @@
     </div>
 
     <div class="profile-right">
-        <header class="entry-header">
-            <h2>{{ $profile.name }}</h2>
-        </header>
-        
+        <h3>{{ $profile.name }}</h3>
         {{ partial "profile_intro.html" $profile }}
     </div>
-</article>
+</section>
+
+{{ $pubs := site.Data.publications.main }}
+{{ if $pubs }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Recent Publications</h3>
+    <div class="publications-container">
+        {{ range first 2 (sort $pubs "date" "desc") }}
+            {{ partial "publication.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
 
 {{ $upcoming := slice }}
-{{ range $events }}
+{{ range site.Data.events }}
     {{ if ge (time .date) now }}
         {{ $upcoming = $upcoming | append . }}
     {{ end }}
 {{ end }}
-
 {{ if gt (len $upcoming) 0 }}
 <div class="home-section">
     <h3>🗓️ Upcoming Events</h3>
@@ -50,24 +55,5 @@
 </div>
 {{ end }}
 
-{{ if $pubs }}
-<div class="home-section">
-    <h3>📝 Recent Publications</h3>
-    <ul class="paper-list">
-        {{ range first 3 (sort $pubs "date" "desc") }}
-        <li>
-            <div class="paper-title">{{ .title | markdownify }}</div>
-            <div class="paper-meta">
-                <em>{{ .venue }}</em>
-                <span class="paper-links">
-                    {{ if .pdf }} | <a href="{{ .pdf }}">PDF</a>{{ end }}
-                    {{ if .code }} | <a href="{{ .code }}">Code</a>{{ end }}
-                </span>
-            </div>
-        </li>
-        {{ end }}
-    </ul>
-</div>
-{{ end }}
 
 {{ end }}

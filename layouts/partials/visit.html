@@ -1,11 +1,11 @@
 <div class="visit-row">
-    <div class="visit-date">
-        {{ time.Format "Jan 2006" .date }}
+    <div class="marker-date">
+        {{ partial "utils/smart-yyyy-mm.html" .date }}
     </div>
         
     <div class="visit-details">
         <div class="visit-venue">
-            <strong>{{ .venue }}</strong>
+            {{ .venue }}
         </div>
 
         <div class="visit-host">

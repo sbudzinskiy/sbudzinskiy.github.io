@@ -1,8 +1,8 @@
-<div class="entry-content">
+<div class="profile-content">
     {{ $sorted_jobs := sort site.Data.jobs "start" "desc" }}
     {{ $job := index $sorted_jobs 0 }}
 
-    <p class="profile-intro-header">
+    <p class="profile-intro">
         I am a {{ $job.position }} at the {{ $job.organization }}, specializing in {{ .interests }}.
     </p>
 

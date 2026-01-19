@@ -1,0 +1,208 @@
+main:
+  - title: "Low-rank cross approximation of function-valued tensors for reduced-order modeling of parametric PDEs"
+    coauthors: "Vladimir Kazeev, Maxim Olshanskii"
+    venue: "arXiv"
+    year: "2025-11"
+    url_journal:
+    url_preprint: "https://arxiv.org/abs/2511.22650" 
+    selected: true
+
+  - title: "When big data actually are low-rank, or entrywise approximation of certain function-generated matrices"
+    coauthors:
+    venue: "SIAM Journal on Mathematics of Data Science"
+    year: "2025-07"
+    url_journal: "https://doi.org/10.1137/24M1687133"
+    url_preprint: "https://arxiv.org/abs/2407.03250" 
+    selected: true
+
+  - title: "Quasioptimal alternating projections and their use in low-rank approximation of matrices and tensors"
+    coauthors:
+    venue: "Numerische Mathematik"
+    year: "2025-09"
+    url_journal: "https://doi.org/10.1007/s00211-025-01483-6"
+    url_preprint: "https://arxiv.org/abs/2308.16097" 
+    selected: true
+  
+  - title: "Entrywise tensor-train approximation of large tensors via random embeddings"
+    coauthors:
+    venue: "SIAM Journal on Matrix Analysis and Applications"
+    year: "2025-04"
+    url_journal: "https://doi.org/10.1137/24M1649186"
+    url_preprint: "https://arxiv.org/abs/2403.11768"
+    selected:
+  
+  - title: "Matrices over a Hilbert space and their low-rank approximation"
+    coauthors:
+    venue: "arXiv"
+    year: "2025-05"
+    url_journal:
+    url_preprint: "https://arxiv.org/abs/2505.05134"
+    selected:
+
+  - title: "Numerical error analysis of large language models"
+    coauthors: "Wenyi Fang, Longbin Zeng, Philipp Petersen"
+    venue: "arXiv"
+    year: "2025-03"
+    url_journal:
+    url_preprint: "https://arxiv.org/abs/2503.10251"
+    selected: true
+  
+  - title: "On the distance to low-rank matrices in the maximum norm"
+    coauthors:
+    venue: "Linear Algebra and its Applications"
+    year: "2024-05"
+    url_journal: "https://doi.org/10.1016/j.laa.2024.02.012"
+    url_preprint: "https://arxiv.org/abs/2312.12905"
+    selected:
+  
+  - title: "Tensor train completion: Local recovery guarantees via Riemannian optimization"
+    coauthors: "Nikolai Zamarashkin"
+    venue: "Numerical Linear Algebra with Applications"
+    year: "2023-07"
+    url_journal: "https://doi.org/10.1002/nla.2520"
+    url_preprint: "https://arxiv.org/abs/2110.03975"
+    selected:
+  
+  - title: "Variational Bayesian inference for CP tensor completion with subspace information" 
+    coauthors: "Nikolai Zamarashkin"
+    venue: "Lobachevskii Journal of Mathematics" 
+    year: "2023-11"
+    url_journal: "https://doi.org/10.1134/S1995080223080103"
+    url_preprint: "https://arxiv.org/abs/2206.12486"
+    selected:
+  
+  - title: "Sketching for a low-rank nonnegative matrix approximation: Numerical study"
+    coauthors: "Sergey Matveev"
+    venue: "Russian Journal of Numerical Analysis and Mathematical Modelling"
+    year: "2023-04"
+    url_journal: "https://doi.org/10.1515/rnam-2023-0009"
+    url_preprint: "https://arxiv.org/abs/2201.11154"
+    selected:
+  
+  - title: "Low-rank nonnegative tensor approximation via alternating projections and sketching"
+    coauthors: "Azamat Sultonov, Sergey Matveev"
+    venue: "Computational and Applied Mathematics"
+    year: "2023-02"
+    url_journal: "https://doi.org/10.1007/s40314-023-02211-2"
+    url_preprint: "https://arxiv.org/abs/2209.02060"
+    selected:
+
+  - title: "Hopf bifurcation in addition-shattering kinetics"
+    coauthors: "Sergey Matveev, Pavel Krapivsky"
+    venue: "Physical Review E"
+    year: "2021-04"
+    url_journal: "https://doi.org/10.1103/PhysRevE.103.L040101"
+    url_preprint: "https://arxiv.org/abs/2012.09003"
+    selected:
+
+  - title: "Pulsating and rotating spirals in a delayed feedback diffractive nonlinear optical system"
+    coauthors: "Alexander Razgulin"
+    venue: "International Journal of Bifurcation and Chaos"
+    year: "2021-01"
+    url_journal: "https://doi.org/10.1142/S0218127421300020"
+    url_preprint: "https://arxiv.org/abs/1909.02796"
+    selected:
+
+  - title: "Nonlinear analysis of periodic waves in a neural field model"
+    coauthors: "Anne Beuter, Vitaly Volpert"
+    venue: "Chaos: An Interdisciplinary Journal of Nonlinear Science"
+    year: "2020-08"
+    url_journal: "https://doi.org/10.1063/5.0012010"
+    url_preprint: "https://hal.science/hal-03019102"
+    selected:
+
+  - title: "Fast discrete finite Hankel transform for equations in a thin annulus"
+    coauthors: "Tatiana Romanenko"
+    venue: "Computational Mathematics and Modeling"
+    year: "2020-10"
+    url_journal: "https://doi.org/10.1007/s10598-020-09497-5"
+    url_preprint:
+    selected:
+
+  - title: "Note: low-rank tensor train completion with side information based on Riemannian optimization"
+    coauthors: "Nikolai Zamarashkin"
+    venue: "arXiv"
+    year: "2020-06"
+    url_journal:
+    url_preprint: "https://arxiv.org/abs/2006.12798"
+    selected:
+
+  - title: "Elliptic averaging of optical transfer functions for estimating astigmatism and defocus"
+    coauthors:
+    venue: "Optics Communications"
+    year: "2020-04"
+    url_journal: "https://doi.org/10.1016/j.optcom.2019.125213"
+    url_preprint:
+    selected:
+
+  - title: "On the zeros of cross-product Bessel functions in oblique derivative boundary-value problems"
+    coauthors:
+    venue: "Moscow University Computational Mathematics and Cybernetics"
+    year: "2020-07"
+    url_journal: "https://doi.org/10.3103/S0278641920020028"
+    url_preprint: "https://arxiv.org/abs/1909.00293"
+    selected:
+
+  - title: "Defocus optical transfer function: Fast evaluation and lightweight storage based on cubic spline interpolation"
+    coauthors: "Alexander Razgulin"
+    venue: "Journal of the Optical Society of America A"
+    year: "2019-02"
+    url_journal: "https://doi.org/10.1364/JOSAA.36.000436"
+    url_preprint:
+    selected:
+
+  - title: "Rotating waves in a spatially nonlocal delayed feedback optical system with diffraction"
+    coauthors: "Tatiana Romanenko"
+    venue: "Journal of Physics: Conference Series"
+    year: "2018-12"
+    url_journal: "https://doi.org/10.1088/1742-6596/1141/1/012106"
+    url_preprint:
+    selected:
+
+  - title: "Reducing dimensionality to model 2D rotating and standing waves in a delayed nonlinear optical system with thin annulus aperture"
+    coauthors: "Andrey Larichev, Alexander Razgulin"
+    venue: "Nonlinear Analysis: Real World Applications"
+    year: "2018-12"
+    url_journal: "https://doi.org/10.1016/j.nonrwa.2018.06.003"
+    url_preprint:
+    selected:
+
+  - title: "Scalable real-time planning and optimization software complex for the purposes of Earth remote sensing"
+    coauthors: "Vasiliy Sazonov, Sofia Sazonova, Ivan Samylovskiy, Arseniy Sapelkin, Oleg Bulatov, Matvey Egorov, Oleg Morozov, Igor Frolov, Vitaliy Lobanov, Vjatcheslav Tsvetkov, Alexey Strochenkin"
+    venue: "IFAC-PapersOnLine"
+    year: "2018-01"
+    url_journal: "https://doi.org/10.1016/j.ifacol.2018.11.426"
+    url_preprint:
+    selected:
+
+  - title: "On inflection points of Bessel functions of the second kind of positive order"
+    coauthors: "Dmitry Kharitonov"
+    venue: "Integral Transforms and Special Functions"
+    year: "2017-10"
+    url_journal: "https://doi.org/10.1080/10652469.2017.1381092"
+    url_preprint:
+    selected:
+
+  - title: "Rotating and standing waves in a diffractive nonlinear optical system with delayed feedback under O(2) Hopf bifurcation"
+    coauthors: "Alexander Razgulin"
+    venue: "Communications in Nonlinear Science and Numerical Simulation"
+    year: "2017-08"
+    url_journal: "https://doi.org/10.1016/j.cnsns.2017.01.031"
+    url_preprint:
+    selected:
+
+  - title: "Normal form of O(2) Hopf bifurcation in a model of a nonlinear optical system with diffraction and delay"
+    coauthors: "Alexander Razgulin"
+    venue: "Electronic Journal of Qualitative Theory of Differential Equations"
+    year: "2017-06"
+    url_journal: "https://doi.org/10.14232/ejqtde.2017.1.50"
+    url_preprint:
+    selected:
+
+  - title: "Rotating waves in a model of delayed feedback optical system with diffraction"
+    coauthors:
+    venue: "Interdisciplinary Information Sciences"
+    year: "2016-02"
+    url_journal: "https://doi.org/10.4036/iis.2016.A.02"
+    url_preprint:
+    selected:

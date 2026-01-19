@@ -1,0 +1,18 @@
+<div class="pub-item">
+    <div class="pub-title">{{ .title }}</div>
+
+    <div class="pub-authors">
+        {{ if .coauthors}}
+            with {{ .coauthors | markdownify }}
+        {{ end }}
+    </div>
+
+    <div class="pub-meta">
+        <span class="pub-venue">{{ .venue }}</span>, 
+        <span class="pub-year">{{ partial "utils/smart-yyyy.html" .year }}</span>
+        <span class="pub-links">
+            {{ if .url_journal }}<a href="{{ .url_journal }}" target="_blank">[doi]</a>{{ end }}
+            {{ if .url_preprint }}<a href="{{ .url_preprint }}" target="_blank">[preprint]</a>{{ end }}
+        </span>
+    </div>
+</div>

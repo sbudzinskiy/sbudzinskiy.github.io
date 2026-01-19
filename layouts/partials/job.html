@@ -1,18 +1,15 @@
 <div class="timeline-item">
-
-    <div class="timeline-marker-date">
-        {{ time.Format "2006" .start }}&ndash;{{ if .end }}{{ time.Format "2006" .end }}{{ else }}Now{{ end }}
+    <div class="marker-date">
+        {{ partial "utils/smart-yyyy.html" .start }}&ndash;{{ if .end }}{{ partial "utils/smart-yyyy.html" .end }}{{ else }}Now{{ end }}
     </div>
 
     <div class="timeline-content">
-        <div class="timeline-header">
-            <div class="timeline-title">{{ .position }}</div>
+        <div class="timeline-title">
+            {{ .position }}
         </div>
         
-        <div class="timeline-subheader">
-            <span class="timeline-org">
-                {{ .department }}, {{ .organization }}
-            </span>
+        <div class="timeline-org">
+            <span>{{ .department }}, {{ .organization }}</span>
         </div>
         
         {{ if .description }}

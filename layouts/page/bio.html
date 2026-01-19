@@ -1,38 +1,47 @@
 {{ define "main" }}
 
 <article class="post-single">
-  <div class="post-content">
-      {{ .Content }}
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+</article>
 
-      {{ if site.Data.jobs }}
-      <h3 id="employment">Employment</h3>
-      <div class="timeline-container">
-          {{ range sort site.Data.jobs "start" "desc" }}
-              {{ partial "job.html" . }}
-          {{ end }}
-      </div>
-      <hr>
-      {{ end }}
+{{ $jobs := site.Data.jobs }}
+{{ if $jobs }}
+<section class="home-section">
+    <h3>Employment</h3>
+    <div class="timeline-container">
+        {{ range sort $jobs "start" "desc" }}
+            {{ partial "job.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
 
-      {{ if site.Data.education }}
-      <h3 id="employment">Education</h3>
-      <div class="timeline-container">
-          {{ range sort site.Data.education "start" "desc" }}
-              {{ partial "job.html" . }}
-          {{ end }}
-      </div>
-      <hr>
-      {{ end }}
-      
-      {{ if site.Data.visits }}
-      <h3 id="visits">Research Visits</h3>
-      <div class="visits-container">
-        {{ range sort site.Data.visits "date" "desc" }}
+{{ $edu := site.Data.education }}
+{{ if $edu }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Education</h3>
+    <div class="timeline-container">
+        {{ range sort $edu "start" "desc" }}
+            {{ partial "job.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ $visits := site.Data.visits }}
+{{ if $visits }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Research Visits</h3>
+    <div class="visits-container">
+        {{ range sort $visits "date" "desc" }}
             {{ partial "visit.html" . }}
         {{ end }}
     </div>
-    {{ end }}    
-  </div>
-</article>
+</section>
+{{ end }}    
 
 {{ end }}
