@@ -1,0 +1,24 @@
+<div class="project-item">
+    <div class="funding-header">
+        <span class="funding-agency">{{ .agency }}</span>
+        <span class="funding-role-sum">
+            {{ .role }}, {{ .sum }}
+        </span>
+    </div>
+
+    <div class="funding-title">
+        {{ .title }}
+    </div>
+
+    <div class="funding-meta">
+        {{ partial "utils/smart-yyyy.html" .start }}&ndash;{{ partial "utils/smart-yyyy.html" .end }}
+
+        {{- if .call -}}
+            , {{ .call }}
+        {{- end -}}
+
+        {{- if .id -}}
+            , {{ .id }}
+        {{- end -}}
+    </div>
+</div>

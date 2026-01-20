@@ -215,10 +215,70 @@
 }
 
 .pub-links a {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-family: monospace;
+    font-weight: 700;
+    
+    padding: 0px 1px;
     margin-left: 2px;
-    padding: 0px 0px;
+    border-radius: 4px;
+    
+    background: var(--entry);
     color: var(--primary);
     text-decoration: none;
+    
+    transition: all 0.2s ease;
+}
+
+.pub-links a:hover {
+    background: var(--primary);
+    color: var(--theme);
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------ */
+
+.projects-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-item {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.funding-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.0rem;
+    align-items: baseline;
+}
+
+.funding-agency {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.funding-role-sum {
+    font-family: monospace;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.funding-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--secondary);
+    font-style: italic;
+}
+
+.funding-meta {
+    color: var(--secondary);
+    font-size: 0.95rem;
 }
 
 /* ------------------------------------------------------ */

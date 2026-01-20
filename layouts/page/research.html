@@ -18,4 +18,17 @@
 </section>
 {{ end }}
 
+{{ $funds := site.Data.projects.funding }}
+{{ if $funds }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Awarded Funding</h3>
+    <div class="projects-container">
+        {{ range sort $funds "start" "desc" }}
+            {{ partial "funding.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
 {{ end }}

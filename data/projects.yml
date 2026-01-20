@@ -1,0 +1,27 @@
+funding:
+  - title: "Bochner matrices: The approximation of matrices with infinite-dimensional entries"
+    agency: "Austrian Academy of Sciences (ÖAW)"
+    role: "PI"
+    start: "2024"
+    end: "2025"
+    sum: "€52k"
+    call: "Disruptive Innovation - Early Career Seed Money"
+
+  - title: "Completion methods for multidimensional data and their applications"
+    agency: "Russian Science Foundation"
+    role: "PI"
+    start: "2021"
+    end: "2024"
+    sum: "€210k"
+    id: "RSCF 21-71-10072"
+
+  - title: "Development of analytical and numerical methods to study pattern formation in delayed quasilinear
+diffusion equations on thin domains"
+    agency: "Russian Foundation for Basic Research"
+    role: "Co-PI"
+    start: "2018"
+    end: "2019"
+    sum: "€15k"
+    id: "RFBR 18-31-00236"
+
+participation:
