@@ -1,0 +1,17 @@
+<div class="project-item">
+    <div class="participation-title">
+        {{ .title }}
+    </div>
+
+    <div class="participation-meta">
+        PI: {{ .pi }}
+        {{- if .id -}}
+            , {{ .id }}
+        {{- end -}}
+    </div>
+
+    <div class="participation-subheader">
+        <span class="participation-agency">{{ .agency }},</span>
+        {{ partial "utils/smart-yyyy.html" .start }}&ndash;{{ partial "utils/smart-yyyy.html" .end }}
+    </div>
+</div>

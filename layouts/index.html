@@ -28,32 +28,11 @@
     <hr class="separator">
     <h3>Recent Publications</h3>
     <div class="publications-container">
-        {{ range first 2 (sort $pubs "date" "desc") }}
+        {{ range first 2 (sort $pubs "year" "desc") }}
             {{ partial "publication.html" . }}
         {{ end }}
     </div>
 </section>
 {{ end }}
-
-{{ $upcoming := slice }}
-{{ range site.Data.events }}
-    {{ if ge (time .date) now }}
-        {{ $upcoming = $upcoming | append . }}
-    {{ end }}
-{{ end }}
-{{ if gt (len $upcoming) 0 }}
-<div class="home-section">
-    <h3>🗓️ Upcoming Events</h3>
-    <ul class="simple-list">
-        {{ range first 3 (sort $upcoming "date" "asc") }}
-        <li>
-            <strong>{{ (time .date).Format "Jan 02, 2006" }}:</strong> 
-            {{ .title }} — {{ .location }}
-        </li>
-        {{ end }}
-    </ul>
-</div>
-{{ end }}
-
 
 {{ end }}

@@ -266,7 +266,7 @@
     font-family: monospace;
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .funding-title {
@@ -277,6 +277,33 @@
 }
 
 .funding-meta {
+    color: var(--secondary);
+    font-size: 0.95rem;
+}
+
+/* ------------------------------------------------------ */
+
+.participation-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.participation-subheader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.2rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.participation-agency {
+    font-style: italic;
+}
+
+.participation-meta {
     color: var(--secondary);
     font-size: 0.95rem;
 }

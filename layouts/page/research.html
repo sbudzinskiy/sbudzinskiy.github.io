@@ -31,4 +31,17 @@
 </section>
 {{ end }}
 
+{{ $parts := site.Data.projects.participation }}
+{{ if $parts }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Participation in Projects</h3>
+    <div class="projects-container">
+        {{ range sort $parts "start" "desc" }}
+            {{ partial "participation.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
 {{ end }}
