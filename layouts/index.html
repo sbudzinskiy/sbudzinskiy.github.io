@@ -28,7 +28,7 @@
     <hr class="separator">
     <h3>Recent Publications</h3>
     <div class="publications-container">
-        {{ range first 2 (sort $pubs "year" "desc") }}
+        {{ range first 2 (sort $pubs "date" "desc") }}
             {{ partial "publication.html" . }}
         {{ end }}
     </div>

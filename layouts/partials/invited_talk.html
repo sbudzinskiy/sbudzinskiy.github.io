@@ -1,0 +1,27 @@
+<div class="talk-item">
+    <div class="talk-date-badge">
+        <div class="marker-date">
+            {{ partial "utils/smart-yyyy-mm.html" .date }}
+        </div>
+        {{ if .badge }}
+        <div class="talk-badge {{ urlize .badge }}">{{ .badge }}</div>
+        {{ end }}
+    </div>
+        
+    <div class="talk-content">
+        <div class="talk-top">
+            <span class="talk-event">{{ .event }}</span>
+            <span class="talk-location">{{ .location }}</span>
+        </div>
+
+        <div class="talk-middle">
+            {{ if .subevent }}
+            <span class="talk-subevent">{{ .subevent }}</span>
+            {{ end }}
+        </div>
+
+        <div class="talk-bottom">
+            {{ .title }}
+        </div>
+    </div>
+</div>

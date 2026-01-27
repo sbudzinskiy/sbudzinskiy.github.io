@@ -11,7 +11,7 @@
 <section class="home-section">
     <h3>Selected Publications</h3>
     <div class="publications-container">
-        {{ range sort (where $pubs "selected" true) "year" "desc" }}
+        {{ range sort (where $pubs "selected" true) "date" "desc" }}
             {{ partial "publication.html" . }}
         {{ end }}
     </div>

@@ -1,0 +1,135 @@
+invited:
+  - title: "Look-ahead mixed-precision inference of LLMs"
+    event: "ILAS 2026"
+    subevent: "Numerical Linear Algebra in Machine Learning"
+    location: "Blacksburg, US"
+    date: "2026-05"
+
+  - title: "Approximation guarantees for low-rank approximation in the Chebyshev norm"
+    event: "Tensor Methods in Mathematics and AI Computing"
+    location: "Shenzhen, CN"
+    date: "2025-11"
+
+  - title: "Low-rank approximation in the entrywise maximum norm"
+    event: "Low-Rank Models and Applications Workshop"
+    location: "Mons, BE"
+    date: "2025-09"
+    badge: "Plenary"
+
+  - title: "Parametric PDEs and low-rank approximation of function-valued matrices"
+    event: "SciCADE 2024"
+    subevent: "Dynamical Low Rank Approximation: From Theory to Applications" 
+    location: "Singapore, SG"
+    date: "2024-07"
+
+  - title: "Low-rank nonnegative matrix and tensor approximations"
+    event: "ILAS 2023"
+    subevent: "Low-Rank Matrices and Tensors: Algorithms and Applications" 
+    location: "Madrid, ES"
+    date: "2023-06"
+
+  - title: "Bayesian approach to matrix and tensor completion"
+    event: "Random Matrix Theory and Beyond Workshop"
+    location: "Sochi, RU"
+    date: "2022-08"
+
+  - title: "Study of nonlinear dynamics of periodic waves in a neural field model"
+    event: "Mathematical Modelling in Biomedicine Workshop"
+    location: "Online"
+    date: "2020-12"
+
+seminar:
+  - title: "Look-ahead mixed-precision inference of deep neural networks"
+    event: "Mathematics of ML and DS"
+    venue: "University of Vienna"
+    location: "Vienna, AT"
+    date: "2026-02"
+
+  - title: "Low-rank cross approximation of vector-valued tensors with applications to parametric PDEs"
+    event: "Séminaire d’Analyse Numérique"
+    venue: "University of Geneva"
+    location: "Geneva, CH"
+    date: "2025-11"
+
+  - title: "Know your numbers: Floating-point arithmetic and numerical analysis in machine learning"
+    event: "Mathematics of ML and DS"
+    venue: "University of Vienna"
+    location: "Vienna, AT"
+    date: "2025-05"
+
+  - title: "Efficient approaches to low-rank matrix approximation"
+    event: "CCAM Collaboration Meeting"
+    venue: "University of Chicago"
+    location: "Chicago, US"
+    date: "2024-12"
+
+  - title: "Entrywise approximation of matrices and tensors via random embeddings"
+    event: "ANCHP Chair Seminar"
+    venue: "EPFL"
+    location: "Lausanne, CH"
+    date: "2024-11"
+
+  - title: "The simple and versatile method of alternating projections"
+    event: "PDE Afternoon"
+    venue: "TU Wien"
+    location: "Vienna, AT"
+    date: "2024-01"
+
+contributed:
+  - title: "Parametric PDEs and low-rank approximation of function-valued matrices"
+    event: "Austrian Numerical Analysis Day"
+    location: "Innsbruck, AT"
+    date: "2024-05"
+
+  - title: "Quasioptimal alternating projections"
+    event: "Austrian Calculus of Variations Day"
+    location: "Vienna, AT"
+    date: "2023-11"
+
+  - title: "Alternating projections for low-rank approximation in the maximum norm"
+    event: "Matrix Equations and Tensor Techniques"
+    location: "Aachen, DE"
+    date: "2023-09"
+
+  - title: "On the number of elements needed for low-rank tensor train completion"
+    event: "Matrix Equations and Tensor Techniques"
+    location: "Online"
+    date: "2021-09"
+
+  - title: "Spirals in a delayed reaction-diffusion equation: From a thin annulus to a circle and back again"
+    event: "Qualitative Theory of Differential Equations"
+    location: "Szeged, HU"
+    date: "2019-06"
+
+  - title: "Estimating defocus and astigmatism of the optical transfer function by frequency scaling"
+    event: "IHP Mathematics of Imaging School"
+    location: "Marseille, FR"
+    date: "2019-01"
+
+  - title: "Hopf bifurcation of rotating waves in delayed parabolic functional-differential equations of nonlinear optics in the presence of symmetry groups"
+    event: "Differential and Functional Differential Equations"
+    location: "Moscow, RU"
+    date: "2017-08"
+
+  - title: "Numerical simulation of a delayed feedback nonlinear optical system"
+    event: "Rome-Moscow School of Matrix Methods"
+    location: "Moscow, RU"
+    date: "2016-08"
+
+  - title: "Are big-data matrices approximately low-rank? A tale of post-publication peer review"
+    event: "SFB 65 Int'l Workshop"
+    location: "Vienna, AT"
+    date: "2025-02"
+    poster: "true"
+
+  - title: "Low-rank tensor approximation from incomplete data and under constraints"
+    event: "SFB 65 Int'l Workshop"
+    location: "Vienna, AT"
+    date: "2023-04"
+    poster: "true"
+
+  - title: "On the existence of rotating wave solutions to delayed diffusion functional-differential equation"
+    event: "GSIS Homogenization and Numerical Analysis School"
+    location: "Tohoku, JP"
+    date: "2015-08"
+    poster: "true"

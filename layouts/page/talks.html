@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<article class="post-single">
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+</article>
+
+{{ $invited := site.Data.talks.invited }}
+{{ if $invited }}
+<section class="home-section">
+    <h3>Invited Conference Talks</h3>
+    <div class="talks-container">
+        {{ range sort $invited "date" "desc" }}
+            {{ partial "invited_talk.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ $seminar := site.Data.talks.seminar }}
+{{ if $seminar }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Invited Seminars</h3>
+    <div class="talks-container">
+        {{ range sort $seminar "date" "desc" }}
+            {{ partial "seminar.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ $contributed := site.Data.talks.contributed }}
+{{ if $contributed }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Contributed Talks</h3>
+    <div class="talks-container">
+        {{ range sort $contributed "date" "desc" }}
+            {{ partial "contributed_talk.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ end }}
