@@ -39,23 +39,11 @@ invited:
     date: "2020-12"
 
 seminar:
-  - title: "Look-ahead mixed-precision inference of deep neural networks"
-    event: "Mathematics of ML and DS"
-    venue: "University of Vienna"
-    location: "Vienna, AT"
-    date: "2026-02"
-
   - title: "Low-rank cross approximation of vector-valued tensors with applications to parametric PDEs"
     event: "Séminaire d’Analyse Numérique"
     venue: "University of Geneva"
     location: "Geneva, CH"
     date: "2025-11"
-
-  - title: "Know your numbers: Floating-point arithmetic and numerical analysis in machine learning"
-    event: "Mathematics of ML and DS"
-    venue: "University of Vienna"
-    location: "Vienna, AT"
-    date: "2025-05"
 
   - title: "Efficient approaches to low-rank matrix approximation"
     event: "CCAM Collaboration Meeting"
@@ -69,13 +57,22 @@ seminar:
     location: "Lausanne, CH"
     date: "2024-11"
 
+contributed:
+  - title: "Look-ahead mixed-precision inference of deep neural networks"
+    event: "Mathematics of ML and DS Seminar"
+    location: "Vienna, AT"
+    date: "2026-02"
+
+  - title: "Know your numbers: Floating-point arithmetic and numerical analysis in machine learning"
+    event: "Mathematics of ML and DS Seminar"
+    location: "Vienna, AT"
+    date: "2025-05"
+
   - title: "The simple and versatile method of alternating projections"
     event: "PDE Afternoon"
-    venue: "TU Wien"
     location: "Vienna, AT"
     date: "2024-01"
 
-contributed:
   - title: "Low-rank approximation of vector-valued tensors with applications to parametric PDEs"
     event: "ENUMATH 2025"
     location: "Heidelberg, DE"
