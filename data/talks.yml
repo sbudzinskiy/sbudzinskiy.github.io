@@ -76,6 +76,11 @@ seminar:
     date: "2024-01"
 
 contributed:
+  - title: "Low-rank approximation of vector-valued tensors with applications to parametric PDEs"
+    event: "ENUMATH 2025"
+    location: "Heidelberg, DE"
+    date: "2025-09"
+
   - title: "Parametric PDEs and low-rank approximation of function-valued matrices"
     event: "Austrian Numerical Analysis Day"
     location: "Innsbruck, AT"

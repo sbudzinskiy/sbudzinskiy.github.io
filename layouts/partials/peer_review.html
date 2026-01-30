@@ -1,0 +1,8 @@
+{{ $sorted := sort . "title" "asc" }}
+
+{{ range $index, $item := $sorted }}
+    {{ if gt $index 0 }}
+    <span class="peerrev-separator"> &bull; </span>
+    {{ end }}
+    <span class="peerrev-title">{{ $item.title }}</span>
+{{ end }}

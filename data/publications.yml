@@ -1,4 +1,11 @@
 main:
+  - title: "LAMP: Look-Ahead Mixed-Precision Inference of Large Language Models"
+    coauthors: "Marian Gloser, Tolunay Yilmaz, Ying Hong Tham, Yuanyi Lin, Wenyi Fang, Fan Wu, Philipp Petersen"
+    venue: "arXiv"
+    date: "2026-01"
+    url_journal:
+    url_preprint: "https://arxiv.org/abs/2601.21623" 
+
   - title: "Low-rank cross approximation of function-valued tensors for reduced-order modeling of parametric PDEs"
     coauthors: "Vladimir Kazeev, Maxim Olshanskii"
     venue: "arXiv"

@@ -1,0 +1,22 @@
+<div class="org-item">
+    <div class="marker-date">
+        {{ partial "utils/smart-yyyy-mm.html" .date }}
+    </div>
+        
+    <div class="org-content">
+        <div class="org-top">
+            <span class="org-event">{{ .event }}</span>
+            <span class="org-location">{{ .location }}</span>
+        </div>
+
+        <div class="org-middle">
+            {{ if .supevent }}
+            <span class="org-supevent">{{ .supevent }}</span>
+            {{ end }}
+        </div>
+        
+        {{ if .description }}
+        <div class="org-desc">{{ .description }}</div>
+        {{ end }}
+    </div>
+</div>

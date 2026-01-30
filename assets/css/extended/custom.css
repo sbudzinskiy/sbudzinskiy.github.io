@@ -133,13 +133,13 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 1.0rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--primary);
 }
 
 .timeline-org {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--primary);
 }
@@ -147,6 +147,7 @@
 .timeline-desc {
     font-size: 0.9rem;
     color: var(--secondary);
+    font-weight: 500;
 }
 
 /* ------------------------------------------------------ */
@@ -178,6 +179,7 @@
 .visit-host {
     color: var(--secondary);
     font-size: 0.9rem;
+    font-weight: 400;
     display: inline;
     padding-left: 10px;
 }
@@ -195,30 +197,33 @@
 }
 
 .pub-title {
-    font-size: 1.0rem;
+    font-size: 0.95rem;
     font-weight: 500;
 }
 
 .pub-authors {
-    color: var(--secondary);
-    font-size: 0.95rem;
+    color: var(--primary);
+    font-size: 0.9rem;
     margin-bottom: 0.0rem;
+    font-weight: 400;
 }
 
 .pub-meta {
     color: var(--secondary);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .pub-venue {
     font-style: italic;
+    font-weight: 400;
 }
 
 .pub-links a {
     display: inline-block;
     font-size: 0.75rem;
     font-family: monospace;
-    font-weight: 700;
+    font-weight: 600;
     
     padding: 0px 1px;
     margin-left: 2px;
@@ -257,34 +262,35 @@
 }
 
 .funding-agency {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.95rem;
+    font-weight: 600;
     color: var(--primary);
 }
 
 .funding-role-sum {
     font-family: monospace;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 0.85rem;
+    font-weight: 600;
     color: var(--primary);
 }
 
 .funding-title {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 400;
-    color: var(--secondary);
+    color: var(--primary);
     font-style: italic;
 }
 
 .funding-meta {
     color: var(--secondary);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 /* ------------------------------------------------------ */
 
 .participation-title {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--primary);
 }
@@ -294,7 +300,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     gap: 0.2rem;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 400;
     color: var(--secondary);
 }
@@ -303,8 +309,9 @@
 }
 
 .participation-meta {
-    color: var(--secondary);
-    font-size: 0.95rem;
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 /* ------------------------------------------------------ */
@@ -317,7 +324,7 @@
 .talk-item {
     display: flex;
     gap: 0.0rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     align-items: baseline;
     line-height: 1.4;
 }
@@ -331,7 +338,7 @@
     display: block;
     text-align: center;
     width: 65px;
-    margin-top: 0.2rem;
+    margin-top: 0.15rem;
 
     text-transform: uppercase;
     padding: 0px 4px;
@@ -371,14 +378,14 @@
 }
 
 .talk-event {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.95rem;
+    font-weight: 600;
     color: var(--primary);
 }
 
 .talk-location {
-    font-size: 0.95rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: var(--secondary);
     white-space: nowrap;
 }
@@ -389,14 +396,14 @@
 }
 
 .talk-subevent {
-    font-size: 0.95rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: var(--primary);
 }
 
 .talk-bottom {
-    font-size: 0.95rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: var(--secondary);
     font-style: italic;
 }
@@ -426,10 +433,132 @@
 .seminar-venue {
     display: inline;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--secondary);
     white-space: nowrap;
     padding-left: 10px;
+}
+
+/* ------------------------------------------------------ */
+
+.org-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.org-item {
+    display: flex;
+    gap: 0.0rem;
+    margin-bottom: 1rem;
+    align-items: baseline;
+    line-height: 1.4;
+}
+
+.org-content {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.org-top {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.org-event {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.org-middle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.org-supevent {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary);
+    padding-right: 10px;
+}
+
+.org-location {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--secondary);
+    white-space: nowrap;
+}
+
+.org-desc {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+/* ------------------------------------------------------ */
+
+.thesrevs-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.thesrev-item {
+    display: flex;
+    gap: 0.0rem;
+    margin-bottom: 0.5rem;
+    align-items: baseline;
+    line-height: 1.4;
+}
+
+.thesrev-details {
+    flex-grow: 1;
+}
+
+.thesrev-role {
+    display: inline;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.thesrev-type {
+    display: inline;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--primary);
+    padding-left: 10px;
+}
+
+.thesrev-venue {
+    display: inline;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--secondary);
+    padding-left: 10px;
+}
+
+/* ------------------------------------------------------ */
+
+.peerrevs-cloud {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.peerrev-title {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.peerrev-separator {
+    color: var(--secondary);
+    margin: 0 5px;
+    font-weight: 400;
 }
 
 /* ------------------------------------------------------ */
@@ -570,9 +699,11 @@
     }
 
     .talk-badge {
-        justify-self: start !important;
         grid-column: 3;
         grid-row: 1;
+        align-self: center;
+        position: relative;
+        top: -0.3px;
     }
 
     .talk-content,
@@ -599,7 +730,8 @@
     .talk-bottom {
         grid-row: 4;
         grid-column: 1 / -1;
-    }    
+    }
+
     /* ------------------------------------------------------ */
 
     .seminar-item {
@@ -622,4 +754,69 @@
         grid-column: 2;
         padding-left: 0px;
     }
+
+    /* ------------------------------------------------------ */
+
+    .org-item {
+        display: grid;
+        grid-template-columns: max-content 1fr; 
+        align-items: baseline;
+        gap: 0.0rem 1rem;
+    }
+
+    .org-content,
+    .org-top,
+    .org-middle {
+        display: contents;
+    }
+
+    .org-event {
+        grid-row: 2;
+        grid-column: 1 / -1;
+    }
+
+    .org-location {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .org-supevent {
+        grid-row: 3;
+        grid-column: 1 / -1;
+    }
+    
+    .org-desc {
+        grid-row: 4;
+        grid-column: 1 / -1;
+    }
+
+    /* ------------------------------------------------------ */
+   
+    .thesrev-item {
+        display: grid;
+        grid-template-columns: max-content max-content 1fr; 
+        align-items: baseline;
+        gap: 0.0rem 1rem; 
+    }
+
+    .thesrev-details {
+        display: contents; 
+    }
+
+    .thesrev-role {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .thesrev-type {
+        grid-column: 3;
+        grid-row: 1;
+        padding-left: 0px;
+    }
+
+    .thesrev-venue {
+        grid-column: 1 / -1;
+        padding-left: 0px;
+    }
+
 }

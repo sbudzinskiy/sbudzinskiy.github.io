@@ -1,0 +1,46 @@
+theses:
+  - role: "External Reviewer"
+    type: "Bachelor"
+    venue: "Lomonosov Moscow State University"
+    date: "2021-05"
+    topic: "Numerical Linear Algebra"
+
+  - role: "External Reviewer"
+    type: "Bachelor"
+    venue: "Lomonosov Moscow State University"
+    date: "2021-05"
+    topic: "Numerical Linear Algebra"
+
+peer:
+  - title: "Foundations of Computational Mathematics"
+    count: "1"
+
+  - title: "SIAM Journal on Matrix Analysis and Applications"
+    count: "2"
+
+  - title: "SIAM Journal on Scientific Computing"
+    count: "1"
+
+  - title: "Calcolo"
+    count: "4"
+
+  - title: "Computational and Applied Mathematics"
+    count: "1"
+      
+  - title: "IEEE Transactions on Signal Processing"
+    count: "1"
+
+  - title: "Journal of Computational and Applied Mathematics"
+    count: "1"
+
+  - title: "Journal of Mathematical Analysis and Applications"
+    count: "1"
+
+  - title: "Journal of Numerical Mathematics"
+    count: "1"
+
+  - title: "Linear and Multilinear Algebra"
+    count: "1"
+
+  - title: "Physical Review Accelerators and Beams"
+    count: "1"

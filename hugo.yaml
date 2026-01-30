@@ -24,6 +24,11 @@ menu:
       url: "/talks/"
       weight: 4
 
+    - identifier: "service"
+      name: "Service"
+      url: "/service/"
+      weight: 5
+
 params:
 
 markup:

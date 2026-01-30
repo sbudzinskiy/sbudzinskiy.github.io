@@ -1,0 +1,11 @@
+- event: "Numerical Stability in Deep Learning"
+  supevent: "Workshop of RICAM Special Semester"
+  location: "Linz, AT"
+  date: "2026-11"
+  description: "Co-organized with Philipp Petersen"
+
+- event: "Low-Rank Tensor Methods for Parametric and Multiscale Problems"
+  supevent: "Minisymposium at ENUMATH 2025"
+  location: "Heidelberg, DE"
+  date: "2025-09"
+  description: "Co-organized with Vladimir Kazeev"

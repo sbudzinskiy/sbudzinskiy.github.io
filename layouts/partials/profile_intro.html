@@ -1,5 +1,5 @@
 <div class="profile-content">
-    {{ $sorted_jobs := sort site.Data.jobs "start" "desc" }}
+    {{ $sorted_jobs := sort site.Data.bio.jobs "start" "desc" }}
     {{ $job := index $sorted_jobs 0 }}
 
     <p class="profile-intro">

@@ -6,7 +6,7 @@
     </div>
 </article>
 
-{{ $jobs := site.Data.jobs }}
+{{ $jobs := site.Data.bio.jobs }}
 {{ if $jobs }}
 <section class="home-section">
     <h3>Employment</h3>
@@ -18,7 +18,7 @@
 </section>
 {{ end }}
 
-{{ $edu := site.Data.education }}
+{{ $edu := site.Data.bio.education }}
 {{ if $edu }}
 <section class="home-section">
     <hr class="separator">
@@ -31,7 +31,7 @@
 </section>
 {{ end }}
 
-{{ $visits := site.Data.visits }}
+{{ $visits := site.Data.bio.visits }}
 {{ if $visits }}
 <section class="home-section">
     <hr class="separator">

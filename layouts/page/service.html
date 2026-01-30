@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<article class="post-single">
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+</article>
+
+{{ $org := site.Data.organization }}
+{{ if $org }}
+<section class="home-section">
+    <h3>Organization</h3>
+    <div class="org-container">
+        {{ range sort $org "date" "desc" }}
+            {{ partial "organization.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ $reviews := site.Data.reviews }}
+{{ if $reviews }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Academic Reviewing</h3>
+    <div class="thesrevs-container">
+        {{ range sort $reviews.theses "year" "desc" }}
+            {{ partial "thesis_review.html" . }}
+        {{ end }}
+    </div>
+    <div class="peerrevs-cloud">
+        {{ partial "peer_review.html" $reviews.peer }}
+    </div>
+</section>
+{{ end }}
+
+{{ end }}
