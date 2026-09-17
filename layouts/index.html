@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $profile := site.Data.profile }}
+{{ $profile := hugo.Data.profile }}
 <section class="home-info profile-split-layout"> 
     <div class="profile-left">
         {{ with $profile.image }}
@@ -22,7 +22,7 @@
     </div>
 </section>
 
-{{ $pubs := site.Data.publications.main }}
+{{ $pubs := hugo.Data.publications.main }}
 {{ if $pubs }}
 <section class="home-section">
     <hr class="separator">

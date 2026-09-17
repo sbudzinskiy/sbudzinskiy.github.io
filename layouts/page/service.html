@@ -6,7 +6,7 @@
     </div>
 </article>
 
-{{ $org := site.Data.organization }}
+{{ $org := hugo.Data.organization }}
 {{ if $org }}
 <section class="home-section">
     <h3>Organization</h3>
@@ -18,7 +18,7 @@
 </section>
 {{ end }}
 
-{{ $reviews := site.Data.reviews }}
+{{ $reviews := hugo.Data.reviews }}
 {{ if $reviews }}
 <section class="home-section">
     <hr class="separator">

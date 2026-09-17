@@ -6,7 +6,7 @@
     </div>
 </article>
 
-{{ $invited := site.Data.talks.invited }}
+{{ $invited := hugo.Data.talks.invited }}
 {{ if $invited }}
 <section class="home-section">
     <h3>Invited Conference Talks</h3>
@@ -18,7 +18,7 @@
 </section>
 {{ end }}
 
-{{ $seminar := site.Data.talks.seminar }}
+{{ $seminar := hugo.Data.talks.seminar }}
 {{ if $seminar }}
 <section class="home-section">
     <hr class="separator">
@@ -31,7 +31,7 @@
 </section>
 {{ end }}
 
-{{ $contributed := site.Data.talks.contributed }}
+{{ $contributed := hugo.Data.talks.contributed }}
 {{ if $contributed }}
 <section class="home-section">
     <hr class="separator">

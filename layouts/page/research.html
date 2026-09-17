@@ -6,7 +6,7 @@
     </div>
 </article>
 
-{{ $pubs := site.Data.publications.main }}
+{{ $pubs := hugo.Data.publications.main }}
 {{ if $pubs }}
 <section class="home-section">
     <h3>Selected Publications</h3>
@@ -18,7 +18,7 @@
 </section>
 {{ end }}
 
-{{ $funds := site.Data.projects.funding }}
+{{ $funds := hugo.Data.projects.funding }}
 {{ if $funds }}
 <section class="home-section">
     <hr class="separator">
@@ -31,7 +31,7 @@
 </section>
 {{ end }}
 
-{{ $parts := site.Data.projects.participation }}
+{{ $parts := hugo.Data.projects.participation }}
 {{ if $parts }}
 <section class="home-section">
     <hr class="separator">
