@@ -28,4 +28,18 @@
 </section>
 {{ end }}
 
+{{ $translation := hugo.Data.translation }}
+{{ if $translation }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Translations in the Humanities</h3>
+    {{ partial "translation_statement.html" $translation }}
+    <div class="translation-container">
+        {{ range sort $translation.papers "date_translation" "desc" }}
+            {{ partial "translation.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
 {{ end }}

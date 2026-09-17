@@ -1,0 +1,19 @@
+<div class="pub-item">
+    <div class="pub-title">{{ .title }}</div>
+
+    <div class="pub-authors">
+        by {{ .author }},
+        <span class="pub-venue">{{ .venue_original }}</span>, 
+        <span class="pub-year">{{ partial "utils/smart-yyyy.html" .date_original }}</span>
+    </div>
+
+    <div class="pub-meta">
+        <span class="pub-venue">{{ .venue_translation }}</span>, 
+        <span class="pub-year">{{ partial "utils/smart-yyyy.html" .date_translation }}</span>
+        <span class="pub-links">
+            <a href="{{ .url_original }}" target="_blank">[original]</a>
+            <a href="{{ .url_translation }}" target="_blank">[translation]</a>
+            <a href="{{ .url_preface }}" target="_blank">[preface]</a>
+        </span>
+    </div>
+</div>

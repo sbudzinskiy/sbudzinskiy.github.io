@@ -27,6 +27,29 @@
     padding-top: 2.5px;
 }
 
+.links a {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-family: monospace;
+    font-weight: 600;
+    
+    padding: 0px 1px;
+    margin-left: 2px;
+    border-radius: 4px;
+    
+    background: var(--entry);
+    color: var(--primary);
+    text-decoration: none;
+    
+    transition: all 0.2s ease;
+}
+
+.links a:hover {
+    background: var(--primary);
+    color: var(--theme);
+    text-decoration: none;
+}
+
 /* ------------------------------------------------------ */
 
 .profile-left {
@@ -559,6 +582,29 @@
     color: var(--secondary);
     margin: 0 5px;
     font-weight: 400;
+}
+
+/* ------------------------------------------------------ */
+
+.translation-statement {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1.5;
+}
+
+.translation-statement p a {
+    color: var(--theme);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--secondary);
+    transition: all 0.2s ease;
+}
+
+.translation-statement p a:hover {
+    background-color: var(--secondary);
+    color: var(--theme);
 }
 
 /* ------------------------------------------------------ */

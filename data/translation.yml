@@ -1,0 +1,37 @@
+statement: >
+  As a voluntary friendship-binding activity, I translate influential texts in the humanities into Russian with a historian,
+
+profile:
+  name: "Ivan Kirpichnikov"
+  link: "https://humus.academia.edu/IvanKirpichnikov"
+
+papers:
+  - title: "Poor Man, Rich Man, Big-man, Chief: Political Types in Melanesia and Polynesia"
+    author: "Marshall D. Sahlins"
+    venue_original: "Comparative Studies in Society and History"
+    date_original: "1963-04"
+    venue_translation: "Siberian Historial Research"
+    date_translation: "2018-03"
+    url_original: "https://www.jstor.org/stable/177650"
+    url_translation: "https://journals.tsu.ru/siberia/&journal_page=archive&id=1686&article_id=37307"
+    url_preface: "https://journals.tsu.ru/siberia/&journal_page=archive&id=1686&article_id=37306"
+
+  - title: "Blurred Boundaries: The Discourse of Corruption, the Culture of Politics, and the Imagined State"
+    author: "Akhil Gupta"
+    venue_original: "American Ethnologist"
+    date_original: "1995-05"
+    venue_translation: "Siberian Historial Research"
+    date_translation: "2023-03"
+    url_original: "https://www.jstor.org/stable/646708"
+    url_translation: "https://journals.tsu.ru/siberia/&journal_page=archive&id=2342&article_id=52060"
+    url_preface: "https://journals.tsu.ru/siberia/&journal_page=archive&id=2342&article_id=52059"
+
+  - title: "Biopower and the Avalanche of Printed Numbers"
+    author: "Ian Hacking"
+    venue_original: "Humanities in Society"
+    date_original: "1982"
+    venue_translation: "Siberian Historial Research"
+    date_translation: "2026-03"
+    url_original: "https://www.degruyterbrill.com/document/doi/10.7208/9780226226767-005/html"
+    url_translation: "https://journals.tsu.ru/siberia/&journal_page=archive&id=2728&article_id=55637"
+    url_preface: "https://journals.tsu.ru/siberia/&journal_page=archive&id=2728&article_id=55636"
