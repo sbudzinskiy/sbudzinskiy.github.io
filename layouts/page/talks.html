@@ -1,11 +1,5 @@
 {{ define "main" }}
 
-<article class="post-single">
-    <div class="post-content">
-        {{ .Content }}
-    </div>
-</article>
-
 {{ $invited := hugo.Data.talks.invited }}
 {{ if $invited }}
 <section class="home-section">

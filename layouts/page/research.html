@@ -1,11 +1,5 @@
 {{ define "main" }}
 
-<article class="post-single">
-    <div class="post-content">
-        {{ .Content }}
-    </div>
-</article>
-
 {{ $pubs := hugo.Data.publications.main }}
 {{ if $pubs }}
 <section class="home-section">

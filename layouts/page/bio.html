@@ -1,11 +1,5 @@
 {{ define "main" }}
 
-<article class="post-single">
-    <div class="post-content">
-        {{ .Content }}
-    </div>
-</article>
-
 {{ $jobs := hugo.Data.bio.jobs }}
 {{ if $jobs }}
 <section class="home-section">
