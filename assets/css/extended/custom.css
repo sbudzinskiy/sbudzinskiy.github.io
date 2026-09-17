@@ -270,7 +270,7 @@
 .funding-role-sum {
     font-family: monospace;
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--primary);
 }
 

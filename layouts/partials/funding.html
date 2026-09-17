@@ -2,7 +2,7 @@
     <div class="funding-header">
         <span class="funding-agency">{{ .agency }}</span>
         <span class="funding-role-sum">
-            {{ .role }}, {{ .sum }}
+            {{ .role }}, {{ .sum }}, {{ .duration }}
         </span>
     </div>
 
@@ -11,7 +11,7 @@
     </div>
 
     <div class="funding-meta">
-        {{ partial "utils/smart-yyyy.html" .start }}&ndash;{{ partial "utils/smart-yyyy.html" .end }}
+        {{ partial "utils/smart-yyyy.html" .start }}
 
         {{- if .call -}}
             , {{ .call }}

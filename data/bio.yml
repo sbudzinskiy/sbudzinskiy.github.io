@@ -4,7 +4,7 @@ jobs:
     organization: "University of Vienna"
     start: "2025"
     end: 
-    location: "Vienna, Austria"
+    location: "Vienna, AT"
     description: "Group of Philipp Petersen on ‘Mathematics of machine learning'"
   
   - position: "Postdoc"
@@ -12,7 +12,7 @@ jobs:
     organization: "University of Vienna"
     start: "2023"
     end: "2024"
-    location: "Vienna, Austria"
+    location: "Vienna, AT"
     description: "Group of Vladimir Kazeev on ‘Data-driven numerical methods for PDE’"
   
   - position: "Researcher"
@@ -20,7 +20,7 @@ jobs:
     organization: "Russian Academy of Sciences"
     start: "2021"
     end: "2023"
-    location: "Moscow, Russia"
+    location: "Moscow, RU"
     description: "Group of Eugene Tyrtyshnikov on ‘Tensor methods and applications’"
   
   - position: "Junior Researcher"
@@ -28,7 +28,7 @@ jobs:
     organization: "Lomonosov Moscow State University"
     start: "2018"
     end: "2021"
-    location: "Moscow, Russia"
+    location: "Moscow, RU"
     description: "Group of Alexander Razgulin on ‘Mathematical modeling of nonlinear phenomena’"
 
 education:
@@ -37,28 +37,33 @@ education:
     organization: "Lomonosov Moscow State University"
     start: "2012"
     end: "2018"
-    location: "Moscow, Russia"
+    location: "Moscow, RU"
   
   - position: "PhD in Applied Mathematics"
     department: "Fac. of Computational Mathematics and Cybernetics"
     organization: "Lomonosov Moscow State University"
     start: "2018"
     end: "2020"
-    location: "Moscow, Russia"
+    location: "Moscow, RU"
     description: "‘Mathematical modeling of wave structures in nonlinear optical systems with delay and diffraction' &nbsp; Advisor: Alexander Razgulin"
 
 visits:
+  - venue: "Sorbonne University"
+    location: "Paris, FR"
+    date: "2026-09"
+    host: "El-Mehdi El Arar"
+
   - venue: "University of Geneva"
-    location: "Geneva, Switzerland"
+    location: "Geneva, CH"
     date: "2025-11"
     host: "Bart Vandereycken"
   
   - venue: "University of Chicago"
-    location: "Chicago, USA"
+    location: "Chicago, US"
     date: "2024-12"
     host: "Yuehaw Khoo"
   
   - venue: "EPFL"
-    location: "Lausanne, Switzerland"
+    location: "Lausanne, CH"
     date: "2024-11"
     host: "Daniel Kressner"

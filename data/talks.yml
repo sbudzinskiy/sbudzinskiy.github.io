@@ -1,4 +1,14 @@
 invited:
+  - event: "Coupled Problems 2027"
+    subevent: "Model Reduction and Scientific Machine Learning for Parametric PDEs"
+    location: "Palma de Mallorca, ES"
+    date: "2027-06"
+
+  - title: "Lipschitz constant and mixed-precision evaluation of self-attention"
+    event: "3rd Tensor Methods in Mathematics and AI Computing"
+    location: "Shenzhen, CN"
+    date: "2026-10"
+
   - title: "Look-ahead mixed-precision inference of LLMs"
     event: "ILAS 2026"
     subevent: "Numerical Linear Algebra in Machine Learning"
@@ -6,7 +16,7 @@ invited:
     date: "2026-05"
 
   - title: "Approximation guarantees for low-rank approximation in the Chebyshev norm"
-    event: "Tensor Methods in Mathematics and AI Computing"
+    event: "2nd Tensor Methods in Mathematics and AI Computing"
     location: "Shenzhen, CN"
     date: "2025-11"
 
@@ -39,6 +49,12 @@ invited:
     date: "2020-12"
 
 seminar:
+  - title: "Numerical analysis and mixed-precision evaluation of self-attention"
+    event: "PEQUAN Seminar"
+    venue: "Sorbonne University"
+    location: "Paris, FR"
+    date: "2026-09"
+
   - title: "Low-rank cross approximation of vector-valued tensors with applications to parametric PDEs"
     event: "Séminaire d’Analyse Numérique"
     venue: "University of Geneva"
@@ -58,6 +74,11 @@ seminar:
     date: "2024-11"
 
 contributed:
+  - title: "Numerical analysis and mixed-precision evaluation of self-attention"
+    event: "Numerical Stability in Deep Learning"
+    location: "Linz, AT"
+    date: "2026-11"
+
   - title: "Look-ahead mixed-precision inference of deep neural networks"
     event: "Mathematics of ML and DS Seminar"
     location: "Vienna, AT"

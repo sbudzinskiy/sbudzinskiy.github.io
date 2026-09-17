@@ -1,3 +1,9 @@
+- event: "AI in Scientific Computing"
+  supevent: "Training School of RICAM Special Semester"
+  location: "Linz, AT"
+  date: "2026-10"
+  description: "Co-organized with Daniel Bartl and Maximilian Herde"
+
 - event: "Numerical Stability in Deep Learning"
   supevent: "Workshop of RICAM Special Semester"
   location: "Linz, AT"

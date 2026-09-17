@@ -12,7 +12,7 @@ main:
     date: "2025-11"
     url_journal:
     url_preprint: "https://arxiv.org/abs/2511.22650" 
-    selected: true
+    selected:
 
   - title: "When big data actually are low-rank, or entrywise approximation of certain function-generated matrices"
     coauthors:
@@ -38,15 +38,15 @@ main:
     url_preprint: "https://arxiv.org/abs/2403.11768"
     selected:
   
-  - title: "Matrices over a Hilbert space and their low-rank approximation"
+  - title: "Matrices over a Hilbert space and their low-rank cross approximation"
     coauthors:
     venue: "arXiv"
     date: "2025-05"
     url_journal:
     url_preprint: "https://arxiv.org/abs/2505.05134"
-    selected:
+    selected: true
 
-  - title: "Numerical error analysis of large language models"
+  - title: "Numerical stability analysis of large language models"
     coauthors: "Wenyi Fang, Longbin Zeng, Philipp Petersen"
     venue: "arXiv"
     date: "2025-03"
