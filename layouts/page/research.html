@@ -4,7 +4,8 @@
 {{ if $pubs }}
 <section class="home-section">
     <h3>Selected Publications</h3>
-    <div class="publications-container">
+
+    <div class="container">
         {{ range sort (where $pubs "selected" true) "date" "desc" }}
             {{ partial "publication.html" . }}
         {{ end }}
@@ -17,7 +18,8 @@
 <section class="home-section">
     <hr class="separator">
     <h3>Awarded Funding</h3>
-    <div class="projects-container">
+
+    <div class="container">
         {{ range sort $funds "start" "desc" }}
             {{ partial "funding.html" . }}
         {{ end }}
@@ -30,7 +32,8 @@
 <section class="home-section">
     <hr class="separator">
     <h3>Participation in Projects</h3>
-    <div class="projects-container">
+
+    <div class="container">
         {{ range sort $parts "start" "desc" }}
             {{ partial "participation.html" . }}
         {{ end }}

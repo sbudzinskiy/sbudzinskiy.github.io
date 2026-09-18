@@ -29,6 +29,11 @@ menu:
       url: "/service/"
       weight: 5
 
+    - identifier: "teaching"
+      name: "Teaching"
+      url: "/teaching/"
+      weight: 6
+
 params:
 
 markup:

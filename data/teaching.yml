@@ -1,0 +1,53 @@
+mini:
+  - title: "Numerical stability in deep learning"
+    role: "Lecturer"
+    event: "Training School of RICAM Special Semester"
+    location: "Linz, AT"
+    date: "2026-10"
+
+  - title: "Optimization on manifolds"
+    role: "Lecturer"
+    event: "Multidimensional Data Analysis Summer School"
+    location: "Sochi, RU"
+    date: "2021-08"
+
+regular:
+  - title: "Linear algebra 2"
+    role: "Substitute Lecturer"
+    venue: "University of Vienna"
+    location: "Vienna, AT"
+    start: "2024"
+    end:
+    duration: "5 classes"
+
+  - title: "Tensor methods and applications"
+    role: "Lecturer"
+    venue: "Lomonosov Moscow State University"
+    location: "Moscow, RU"
+    start: "2022"
+    end:
+    duration: "1 semester"
+
+  - title: "Numerical linear algebra"
+    role: "Lecturer"
+    venue: "Moscow Institute of Physics and Technology"
+    location: "Moscow, RU"
+    start: "2021"
+    end:
+    duration: "1 semester"
+
+  - title: "Equations of mathematical physics"
+    role: "Teaching Assistant"
+    venue: "Lomonosov Moscow State University"
+    location: "Moscow, RU"
+    start: "2020"
+    end:
+    duration: "1 semester"
+
+  - title: "Ordinary differential equations"
+    role: "Teaching Assistant"
+    venue: "Lomonosov Moscow State University"
+    location: "Moscow, RU"
+    start: "2018"
+    end: "2020"
+    duration: "4 semesters"

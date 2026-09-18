@@ -4,7 +4,8 @@
 {{ if $org }}
 <section class="home-section">
     <h3>Organization</h3>
-    <div class="org-container">
+
+    <div class="container">
         {{ range sort $org "date" "desc" }}
             {{ partial "organization.html" . }}
         {{ end }}
@@ -17,12 +18,14 @@
 <section class="home-section">
     <hr class="separator">
     <h3>Academic Reviewing</h3>
-    <div class="thesrevs-container">
+
+    <div class="container">
         {{ range sort $reviews.theses "year" "desc" }}
             {{ partial "thesis_review.html" . }}
         {{ end }}
     </div>
-    <div class="peerrevs-cloud">
+
+    <div class="container">
         {{ partial "peer_review.html" $reviews.peer }}
     </div>
 </section>
@@ -33,8 +36,12 @@
 <section class="home-section">
     <hr class="separator">
     <h3>Translations in the Humanities</h3>
-    {{ partial "translation_statement.html" $translation }}
-    <div class="translation-container">
+
+    <div class="container">
+        {{ partial "translation_statement.html" $translation }}
+    </div>
+
+    <div class="container">
         {{ range sort $translation.papers "date_translation" "desc" }}
             {{ partial "translation.html" . }}
         {{ end }}

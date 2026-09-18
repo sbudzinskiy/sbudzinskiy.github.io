@@ -1,12 +1,6 @@
 theses:
   - role: "External Reviewer"
-    type: "Bachelor"
-    venue: "Lomonosov Moscow State University"
-    date: "2021-05"
-    topic: "Numerical Linear Algebra"
-
-  - role: "External Reviewer"
-    type: "Bachelor"
+    type: "2 BSc Theses"
     venue: "Lomonosov Moscow State University"
     date: "2021-05"
     topic: "Numerical Linear Algebra"

@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+{{ $mini := hugo.Data.teaching.mini }}
+{{ if $mini }}
+<section class="home-section">
+    <h3>Minicourses</h3>
+
+    <div class="container">
+        {{ range sort $mini "date" "desc" }}
+            {{ partial "mini_course.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ $regular := hugo.Data.teaching.regular }}
+{{ if $regular }}
+<section class="home-section">
+    <hr class="separator">
+    <h3>Regular Courses</h3>
+
+    <div class="container">
+        {{ range sort $regular "date" "desc" }}
+            {{ partial "regular_course.html" . }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

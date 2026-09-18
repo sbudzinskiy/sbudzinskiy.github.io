@@ -4,7 +4,8 @@
 {{ if $invited }}
 <section class="home-section">
     <h3>Invited Conference Talks</h3>
-    <div class="talks-container">
+
+    <div class="container">
         {{ range sort $invited "date" "desc" }}
             {{ partial "invited_talk.html" . }}
         {{ end }}
@@ -17,7 +18,8 @@
 <section class="home-section">
     <hr class="separator">
     <h3>Invited Seminars</h3>
-    <div class="talks-container">
+
+    <div class="container">
         {{ range sort $seminar "date" "desc" }}
             {{ partial "seminar.html" . }}
         {{ end }}
@@ -30,7 +32,8 @@
 <section class="home-section">
     <hr class="separator">
     <h3>Contributed Talks</h3>
-    <div class="talks-container">
+
+    <div class="container">
         {{ range sort $contributed "date" "desc" }}
             {{ partial "contributed_talk.html" . }}
         {{ end }}

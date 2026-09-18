@@ -4,7 +4,8 @@
 {{ if $jobs }}
 <section class="home-section">
     <h3>Employment</h3>
-    <div class="timeline-container">
+
+    <div class="container">
         {{ range sort $jobs "start" "desc" }}
             {{ partial "job.html" . }}
         {{ end }}
@@ -17,7 +18,8 @@
 <section class="home-section">
     <hr class="separator">
     <h3>Education</h3>
-    <div class="timeline-container">
+
+    <div class="container">
         {{ range sort $edu "start" "desc" }}
             {{ partial "job.html" . }}
         {{ end }}
@@ -30,7 +32,8 @@
 <section class="home-section">
     <hr class="separator">
     <h3>Research Visits</h3>
-    <div class="visits-container">
+    <div class="container">
+
         {{ range sort $visits "date" "desc" }}
             {{ partial "visit.html" . }}
         {{ end }}

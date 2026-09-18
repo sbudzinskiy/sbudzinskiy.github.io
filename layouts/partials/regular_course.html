@@ -1,0 +1,17 @@
+<div class="thin flexible item mobile_grid_3">
+    <div class="marker-date">
+        {{ partial "utils/smart-yyyy.html" .start }}{{ if .end }}&ndash;{{ partial "utils/smart-yyyy.html" .end }}
+        {{ end }}
+    </div>
+        
+    <div class="item-content">
+        <div class="course-top">
+            <span class="course-title">{{ .title }}</span>
+            <span class="course-role">{{ .role }}</span>
+        </div>
+
+        <div class="course-bottom">
+            {{ .venue }}, {{ .duration }}
+        </div>
+    </div>
+</div>

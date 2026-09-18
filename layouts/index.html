@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ $profile := hugo.Data.profile }}
-<section class="home-info profile-split-layout"> 
+<section class="home-info profile-split-layout container"> 
     <div class="profile-left">
         {{ with $profile.image }}
             <img src="{{ . }}" alt="{{ $profile.name }}">
@@ -27,7 +27,7 @@
 <section class="home-section">
     <hr class="separator">
     <h3>Recent Publications</h3>
-    <div class="publications-container">
+    <div class="container">
         {{ range first 2 (sort $pubs "date" "desc") }}
             {{ partial "publication.html" . }}
         {{ end }}

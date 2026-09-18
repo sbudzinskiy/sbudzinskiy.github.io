@@ -1,3 +1,30 @@
+.container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.item {
+    line-height: 1.4;
+}
+
+.flexible {
+    display: flex;
+    gap: 0.0rem;
+}
+
+.thick {
+    margin-bottom: 1.0rem;
+}
+
+.thin {
+    margin-bottom: 0.5rem;
+}
+
+.item-content {
+    flex-grow: 1;
+    min-width: 0;
+}
+
 .logo a {
     font-weight: 400;
     font-size: 1.1rem; 
@@ -14,7 +41,6 @@
     grid-template-columns: auto 1fr;
     gap: 2.5rem;
     align-items: center;
-    margin-bottom: 3rem;
 }
 
 .marker-date {
@@ -135,23 +161,7 @@
 }
 
 /* ------------------------------------------------------ */
-
-.timeline-container {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-    
-.timeline-item {
-    display: flex;
-    gap: 0.0rem;
-    line-height: 1.4;
-    margin-bottom: 1.0rem;     
-}
-    
-.timeline-content {
-    flex-grow: 1;
-}
-
+        
 .timeline-title {
     display: flex;
     justify-content: space-between;
@@ -175,23 +185,6 @@
 
 /* ------------------------------------------------------ */
 
-.visits-container {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.visit-row {
-    display: flex;
-    gap: 0.0rem;
-    margin-bottom: 0.5rem;
-    align-items: baseline;
-    line-height: 1.4;
-}
-
-.visit-details {
-    flex-grow: 1;
-}
-
 .visit-venue {
     display: inline;
     font-size: 0.95rem;
@@ -208,16 +201,6 @@
 }
 
 /* ------------------------------------------------------ */
-
-.publications-container {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.pub-item {
-    margin-bottom: 1rem;
-    line-height: 1.4;
-}
 
 .pub-title {
     font-size: 0.95rem;
@@ -266,16 +249,6 @@
 }
 
 /* ------------------------------------------------------ */
-
-.projects-container {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.project-item {
-    margin-bottom: 1rem;
-    line-height: 1.4;
-}
 
 .funding-header {
     display: flex;
@@ -339,19 +312,6 @@
 
 /* ------------------------------------------------------ */
 
-.talks-container {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.talk-item {
-    display: flex;
-    gap: 0.0rem;
-    margin-bottom: 1rem;
-    align-items: baseline;
-    line-height: 1.4;
-}
-
 .talk-date-badge {
     display: flex;
     flex-direction: column;
@@ -386,11 +346,6 @@
 .talk-badge.semi-plen {
     font-size: 0.65rem;
     letter-spacing: 0.02em;
-}
-
-.talk-content {
-    flex-grow: 1;
-    min-width: 0;
 }
 
 .talk-top {
@@ -433,19 +388,6 @@
 
 /* ------------------------------------------------------ */
 
-.seminar-item {
-    display: flex;
-    gap: 0.0rem;
-    margin-bottom: 0.5rem;
-    align-items: baseline;
-    line-height: 1.4;
-}
-
-.seminar-content {
-    flex-grow: 1;
-    min-width: 0;
-}
-
 .seminar-event {
     display: inline;
     font-size: 0.95rem;
@@ -463,24 +405,6 @@
 }
 
 /* ------------------------------------------------------ */
-
-.org-container {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.org-item {
-    display: flex;
-    gap: 0.0rem;
-    margin-bottom: 1rem;
-    align-items: baseline;
-    line-height: 1.4;
-}
-
-.org-content {
-    flex-grow: 1;
-    min-width: 0;
-}
 
 .org-top {
     display: flex;
@@ -522,23 +446,6 @@
 
 /* ------------------------------------------------------ */
 
-.thesrevs-container {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.thesrev-item {
-    display: flex;
-    gap: 0.0rem;
-    margin-bottom: 0.5rem;
-    align-items: baseline;
-    line-height: 1.4;
-}
-
-.thesrev-details {
-    flex-grow: 1;
-}
-
 .thesrev-role {
     display: inline;
     font-size: 0.95rem;
@@ -565,8 +472,6 @@
 /* ------------------------------------------------------ */
 
 .peerrevs-cloud {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
     text-align: justify;
     text-align-last: center;
     line-height: 1.5;
@@ -587,8 +492,6 @@
 /* ------------------------------------------------------ */
 
 .translation-statement {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--primary);
@@ -608,6 +511,33 @@
 }
 
 /* ------------------------------------------------------ */
+
+.course-top {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.course-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.course-role {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--secondary);
+    white-space: nowrap;
+}
+
+.course-bottom {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 
@@ -618,6 +548,24 @@
         
         width: 65px;
         white-space: nowrap;
+    }
+
+    .item-content {
+        display: contents; 
+    }
+
+    .mobile_grid_2 {
+        display: grid;
+        grid-template-columns: max-content 1fr; 
+        align-items: baseline;
+        gap: 0.0rem 1rem;
+    }
+
+    .mobile_grid_3 {
+        display: grid;
+        grid-template-columns: max-content max-content 1fr; 
+        align-items: baseline;
+        gap: 0.0rem 1rem;
     }
 
     /* ------------------------------------------------------ */
@@ -663,17 +611,6 @@
 
     /* ------------------------------------------------------ */
 
-    .timeline-item {
-        display: grid;
-        grid-template-columns: max-content 1fr; 
-        align-items: baseline;
-        gap: 0.0rem 1rem;
-    }
-
-    .timeline-content {
-        display: contents; 
-    }
-
     .timeline-title {
         grid-column: 2;
         grid-row: 1;
@@ -692,17 +629,6 @@
 
     /* ------------------------------------------------------ */
    
-    .visit-row {
-        display: grid;
-        grid-template-columns: max-content 1fr; 
-        align-items: baseline;
-        gap: 0.0rem 1rem; 
-    }
-
-    .visit-details {
-        display: contents; 
-    }
-
     .visit-venue {
         grid-column: 2;
         grid-row: 1;
@@ -732,13 +658,6 @@
     }
 
     /* ------------------------------------------------------ */
-
-    .talk-item {
-        display: grid;
-        grid-template-columns: max-content max-content 1fr; 
-        align-items: baseline;
-        gap: 0.0rem 1rem;
-    }
 
     .talk-date-badge {
         display: contents;
@@ -779,18 +698,7 @@
     }
 
     /* ------------------------------------------------------ */
-
-    .seminar-item {
-        display: grid;
-        grid-template-columns: max-content 1fr; 
-        align-items: baseline;
-        gap: 0.0rem 1rem; 
-    }
-    
-    .seminar-content {
-        display: contents; 
-    }
-    
+        
     .seminar-event {
         grid-column: 1 / -1;
     }
@@ -802,13 +710,6 @@
     }
 
     /* ------------------------------------------------------ */
-
-    .org-item {
-        display: grid;
-        grid-template-columns: max-content 1fr; 
-        align-items: baseline;
-        gap: 0.0rem 1rem;
-    }
 
     .org-content,
     .org-top,
@@ -838,17 +739,6 @@
 
     /* ------------------------------------------------------ */
    
-    .thesrev-item {
-        display: grid;
-        grid-template-columns: max-content max-content 1fr; 
-        align-items: baseline;
-        gap: 0.0rem 1rem; 
-    }
-
-    .thesrev-details {
-        display: contents; 
-    }
-
     .thesrev-role {
         grid-column: 2;
         grid-row: 1;
@@ -863,6 +753,18 @@
     .thesrev-venue {
         grid-column: 1 / -1;
         padding-left: 0px;
+    }
+
+    /* ------------------------------------------------------ */
+
+    .course-top {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .course-bottom {
+        grid-row: 2;
+        grid-column: 1 / -1;
     }
 
 }
